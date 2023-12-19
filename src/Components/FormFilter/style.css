@@ -1,0 +1,112 @@
+.container-form__filter {
+  height: 650px;
+  position: relative;
+}
+
+.img-form__filter {
+  background-image: url("https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  min-height: 650px;
+  background-attachment: fixed;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.container-form {
+  padding: 16px;
+  border-radius: 10px;
+  background: white;
+  z-index: 99;
+  width: 100%;
+  max-width: 1099px;
+  margin: 125px auto 0 auto;
+}
+
+.buttons-type-service {
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.container-form form {
+  display: flex;
+}
+
+.container-form form a {
+  padding: 0.8rem 1.2rem;
+  background: #001781;
+  color: white;
+  font-size: 20px;
+  font-weight: semi-bold;
+  cursor: pointer;
+  border: none;
+  min-width: 8rem;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: 0.1s;
+}
+
+.container-form form a:hover,
+.container-form form a:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #C6D0FF, 0 0 0 4px #8D9FEF;
+}
+
+.container-form form a:disabled {
+  opacity: 0.5;
+  cursor: wait;
+}
+
+.container-form form select {
+  margin: 0;
+  flex: 1;
+}
+
+.container-form form select:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.container-form form select:nth-child(2) {
+  border-radius: 0;
+}
+
+.container-form form select:nth-child(3) {
+  border-radius: 0;
+}
+
+.mask-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 30, 0.50);
+}
+
+@media screen and (max-width: 1160px) {
+  .container-form {
+    margin: 100px 20px 0 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container-form form {
+    flex-direction: column;
+  }
+
+  .container-form form select {
+    margin-bottom: 24px;
+  }
+
+  .buttons-type-service {
+    margin-bottom: 250px;
+  }
+}

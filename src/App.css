@@ -1,0 +1,77 @@
+/*
+=== Google fonts
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/*
+=== Reset styles
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul, li, a {
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, a, span, li, ul, button, input, label {
+  font-family: 'Poppins';
+}
+
+p {
+  font-family: 'Roboto';
+}
+
+.button {
+  padding: 12px 35px;
+  background: #001781;
+  color: white;
+  font-size: 20px;
+  font-weight: semi-bold;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background: #001470;
+}
+
+.container {
+  max-width: 1098px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1120px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+.animeLeft {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeLeft 0.3s forwards;
+}
+
+@keyframes animeLeft {
+  to{
+    opacity: 1;
+    transform: initial;
+  }
+}

@@ -1,0 +1,52 @@
+.container-register {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.left-side__register, .right-side__register {
+  flex: 1;
+}
+
+.right-side__register {
+  padding: 60px 0;
+}
+
+.left-side__register img {
+  height: 70vh;
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.right-side__register .info-cadastro {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 60px;
+}
+
+.right-side__register h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #0B0C12;
+}
+
+.right-side__register .info-cadastro > a {
+  font-size: 1rem;
+}
+
+.info-cadastro {
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 800px) {
+  .container-register {
+    display: flex;
+  }
+
+  .left-side__register {
+    display: none;
+  }
+}
