@@ -22,6 +22,8 @@ import { ProtectedRoutes } from './helpers/ProtectedRoutes';
 import { Vendas } from './Components/Vendas';
 import { Locacao } from './Components/Locacao';
 import { Simulacao } from './Components/Simulacao';
+import { Contact } from './Components/Contact';
+import { Documentation } from './Components/Documentation';
 
 const App = () => {
   return (
@@ -38,6 +40,8 @@ const App = () => {
             <Route path="/vendas" element={ <Vendas /> } />
             <Route path="/locacao" element={ <Locacao /> } />
             <Route path="/simulacao" element={ <Simulacao /> } />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/doc" element={<Documentation />} />
           </Routes>
           <Footer />
           <GoToTop />
